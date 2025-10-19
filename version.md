@@ -191,7 +191,7 @@ Uma agenda integrada gera alertas e notificações automáticas sobre vencimento
 
 As regras tributárias e tabelas fiscais são atualizadas automaticamente conforme mudanças na legislação, garantindo que o sistema esteja sempre em conformidade com as exigências legais.
 
-<img src="assets/images/diagrama-ambiente.png" alt="Diagrama de Ambientes SIGC" style="max-width:100%; display:block; margin:12px 0;" />
+<img src="/diagrama-sigc.png" alt="Diagrama de Ambientes SIGC" style="max-width:100%; display:block; margin:12px 0;" />
 criado por Júlio César no Inkscape
 
 ## Custo e venda
