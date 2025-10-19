@@ -10,7 +10,7 @@
 
 |    Data    | Versão |           Descrição           |      Autor       |
 | :--------: | :----: | :---------------------------: | :--------------: |
-| 19/10/2025 |  1.0   |     Criação do documento      | Júlio César |
+| 19/10/2025 |  1.0   |     Criação do documento      | Júlio, Felipe |
 
 ---
 
@@ -283,13 +283,13 @@ Algumas possíveis restrições que podem ser aplicadas ao sistema são:
 
 Data: 19 de outubro de 2025
 
-**Validado por: Felipe Antonio Ramalho Macedo**
+**Validado por: Felipe Antonio Ramalho Macedo, Júlio César Batista de Medeiros Oliveria**
 
 <address>
-[Nome do Responsável] | [Cargo]<br>
-[email@empresa.com.br]<br>
-[Nome da Empresa]<br>
-[Endereço]<br>
+julio@empresa.com.br<br>
+felipe@empresa.com.br<br>
+Empresa.com<br>
+João Pessoa – PB, Brasil<br>
 Brasil
 </address>
 
