@@ -1,6 +1,6 @@
 <h1>Visão do Produto</h1>
 
-<h2>Sistema Integrado de Gestão Contábil (SIGC)</h2>
+<h2>ContabSys</h2>
 
 <small>Versão 1.0</small>
 
@@ -44,11 +44,11 @@ O Documento de Visão do Produto (DVP) é um documento que descreve o produto de
 
 ## Propósito
 
-O objetivo deste documento é coletar, analisar e definir características e as necessidades de alto nível do **Sistema Integrado de Gestão Contábil (SIGC).**
+O objetivo deste documento é coletar, analisar e definir características e as necessidades de alto nível do **ContabSys.**
 
 Ele se concentra nos recursos necessários aos stakeholders e aos usuários, e nas razões que levam a essas necessidades.
 
-Os detalhes de como o **Sistema Integrado de Gestão Contábil (SIGC)** atingem essas necessidades são descritos nas _especificações de casos de uso_ e nos _requisitos funcionais_.
+Os detalhes de como o **ContabSys** atingem essas necessidades são descritos nas _especificações de casos de uso_ e nos _requisitos funcionais_.
 
 ## Definições e abreviações
 
@@ -79,7 +79,7 @@ Os detalhes de como o **Sistema Integrado de Gestão Contábil (SIGC)** atingem 
 
 ## Escopo do produto
 
-O **Sistema Integrado de Gestão Contábil (SIGC)** é um sistema que tem como objetivo integrar todas as áreas contábil, fiscal, trabalhista e financeira em um único ambiente. Será utilizado por escritórios de contabilidade que necessitam centralizar suas operações, eliminar a dependência de múltiplos sistemas e oferecer aos seus clientes um portal para envio de documentos e acompanhamento de obrigações em tempo real.
+O **ContabSys** é um sistema que tem como objetivo integrar todas as áreas contábil, fiscal, trabalhista e financeira em um único ambiente. Será utilizado por escritórios de contabilidade que necessitam centralizar suas operações, eliminar a dependência de múltiplos sistemas e oferecer aos seus clientes um portal para envio de documentos e acompanhamento de obrigações em tempo real.
 
 ---
 
@@ -87,7 +87,7 @@ O **Sistema Integrado de Gestão Contábil (SIGC)** é um sistema que tem como o
 
 ## Oportunidade de negócios
 
-O **Sistema Integrado de Gestão Contábil (SIGC)** apresenta várias oportunidades de negócios, tais como:
+O **ContabSys** apresenta várias oportunidades de negócios, tais como:
 
 1. **Revenda para outros escritórios**: O sistema pode ser comercializado como produto para outros escritórios de contabilidade, gerando receita recorrente através de licenciamento.
 2. **Modelo SaaS (Software como Serviço)**: Oferecer o sistema em nuvem com planos de assinatura mensal ou anual, eliminando custos de infraestrutura para os clientes.
@@ -112,7 +112,7 @@ O **Sistema Integrado de Gestão Contábil (SIGC)** apresenta várias oportunida
 
 # Descrição dos stakeholders e dos usuários
 
-Esta seção descreve os stakeholders e os usuários do **Sistema Integrado de Gestão Contábil (SIGC).**
+Esta seção descreve os stakeholders e os usuários do **ContabSys.**
 
 ## Stakeholders
 
@@ -125,7 +125,7 @@ Segue abaixo a lista de stakeholders.
 | Gerente de Projeto                     | Profissional responsável por gerenciar o projeto e garantir que o sistema seja entregue dentro do prazo e orçamento definidos.                          | Gerente de Projeto                                              |
 | Órgãos Governamentais                  | Receita Federal, eSocial, SPED e outros órgãos fiscalizadores que recebem informações do sistema.                                                       | Receptores de obrigações acessórias                             |
 | Clientes dos Escritórios               | Empresas e pessoas físicas que utilizam os serviços contábeis e acessam o portal para enviar documentos e acompanhar obrigações.                        | Usuários externos do sistema                                    |
-| Instituições Bancárias                 | Bancos que fornecem integração para importação de extratos e conciliação bancária.                                                                      | Fornecedores de dados financeiros                               |
+
 
 ## Usuários e atores
 
@@ -179,7 +179,7 @@ A seguir, é apresentada uma tabela que descreve as necessidades dos clientes co
 
 ## Visão geral
 
-O sistema SIGC é um sistema integrado de gestão contábil que permite que escritórios de contabilidade gerenciem todas as suas operações em um único ambiente. O sistema é composto por módulos integrados que cobrem as áreas contábil, fiscal, trabalhista e financeira, compartilhando uma base de dados centralizada.
+O sistema ContabSys é um sistema integrado de gestão contábil que permite que escritórios de contabilidade gerenciem todas as suas operações em um único ambiente. O sistema é composto por módulos integrados que cobrem as áreas contábil, fiscal, trabalhista e financeira, compartilhando uma base de dados centralizada.
 
 O sistema elimina a necessidade de contratar múltiplos softwares, reduzindo custos e aumentando a eficiência operacional. Oferece ainda um portal web e aplicativo mobile para que os clientes dos escritórios possam enviar documentos digitalizados e acompanhar suas obrigações em tempo real.
 
@@ -206,7 +206,7 @@ O sistema poderá também ser comercializado como produto white label, permitind
 
 ## Licenciamento e instalação
 
-O produto SIGC poderá ser licenciado através de diferentes modalidades:
+O ContabSys poderá ser licenciado através de diferentes modalidades:
 
 1. **Licença SaaS (Software como Serviço)**: O cliente acessa o sistema hospedado em nuvem, sem necessidade de instalação local. A empresa desenvolvedora é responsável pela infraestrutura, manutenção e atualizações.
 
