@@ -56,20 +56,16 @@ Os detalhes de como o **ContabSys** atingem essas necessidades são descritos na
 
 | Termo | Definição                                    |
 | :---: | -------------------------------------------- |
-|  DVP  | Documento de Visão do Produto                |
-| SIGC  | Sistema Integrado de Gestão Contábil         |
-|  SRS  | Especificação de Requisitos de Software      |
 | eSocial | Sistema de Escrituração Digital das Obrigações Fiscais, Previdenciárias e Trabalhistas |
 | SPED  | Sistema Público de Escrituração Digital      |
 | NF-e  | Nota Fiscal Eletrônica                       |
 | LGPD  | Lei Geral de Proteção de Dados               |
-| CNPJ  | Cadastro Nacional da Pessoa Jurídica         |
+
 
 ### Definições
 
 |    Termo    | Definição                                                                                                                       |
 | :---------: | ------------------------------------------------------------------------------------------------------------------------------- |
-|   Cliente   | Escritório de contabilidade que contrata o sistema para gerenciar suas operações contábeis, fiscais e trabalhistas.            |
 | Contador    | Profissional responsável pela gestão contábil e fiscal das empresas clientes do escritório.                                     |
 | Auxiliar Contábil | Profissional que auxilia o contador nas rotinas contábeis e administrativas.                                      |
 | Setor Fiscal | Departamento responsável pelas obrigações fiscais e tributárias das empresas.                                              |
@@ -159,7 +155,7 @@ A seguir, são descritos alguns ambientes em que o sistema pode ser utilizado:
 
 ## Necessidades principais quanto ao ambiente
 
-A seguir, é apresentada uma tabela que descreve as necessidades dos clientes com relação à qualidade, desempenho, segurança, usabilidade e confidencialidade do sistema SIGC, juntamente com sua prioridade, interesse, solução atual e soluções propostas:
+A seguir, é apresentada uma tabela que descreve as necessidades dos clientes com relação à qualidade, desempenho, segurança, usabilidade e confidencialidade do sistema Contabsys, juntamente com sua prioridade, interesse, solução atual e soluções propostas:
 
 | Necessidade                                                                                                                                              | Prioridade | Interesse                                                                                                                                                | Solução Atual                                                                                                                 | Soluções Propostas                                                                                                                                                                                                                                                       |
 | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -228,7 +224,7 @@ Após a instalação, cada usuário receberá credenciais de acesso (login e sen
 
 ## Características e funcionalidades de alto nível
 
-Esta seção define e descreve as características do SIGC. Trata-se dos requisitos de alto nível do sistema que são necessários para propiciar benefícios aos usuários.
+Esta seção define e descreve as características do sistema. Trata-se dos requisitos de alto nível do sistema que são necessários para propiciar benefícios aos usuários.
 
 1. O sistema deve permitir o cadastro de múltiplas empresas (multiempresa) com gerenciamento individualizado de cada CNPJ, incluindo dados cadastrais, regime tributário e configurações específicas.
 
