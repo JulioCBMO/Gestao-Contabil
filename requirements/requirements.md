@@ -64,7 +64,7 @@ Esta subseção fornece as definições de todos os termos, acrônimos e abrevia
 
 - Identificação dos requisitos: por convenção, a referência a requisitos é feita através do identificador de requisitos, de acordo como descrito abaixo:
 
- 
+ `[IDENTIFICADOR DO TIPO DE REQUISITOS identificador do requisito]`
 
   O identificador do tipo de requisitos é conforme abaixo:
 
