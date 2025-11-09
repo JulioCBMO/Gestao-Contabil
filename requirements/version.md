@@ -187,7 +187,7 @@ Uma agenda integrada gera alertas e notificações automáticas sobre vencimento
 
 As regras tributárias e tabelas fiscais são atualizadas automaticamente conforme mudanças na legislação, garantindo que o sistema esteja sempre em conformidade com as exigências legais.
 
-<img src="img/diagrama-sigc.png" alt="Diagrama de Ambientes ContabSys" style="max-width:100%; display:block; margin:12px 0;" />
+<img src="[img/diagrama-sigc.png](https://github.com/JulioCBMO/Gestao-Contabil/blob/5ffe1ddf6668ca421a40f66d82d92368f99b7d04/img/diagrama-sigc.png)" alt="Diagrama de Ambientes ContabSys" style="max-width:100%; display:block; margin:12px 0;" />
 criado por Júlio César no Inkscape
 
 ## Custo e venda
