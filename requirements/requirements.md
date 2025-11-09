@@ -123,12 +123,10 @@ Os seguintes usuários foram identificados para o sistema:
 Os Não-Requisitos definem o que o sistema **ContabSys** não deve contemplar em sua versão inicial 
 
 - **[NR001]** - O sistema **não** fornecerá consultoria tributária ou legal automatizada; apenas os cálculos e a geração de documentos com base nos dados imputados pelo usuário. A responsabilidade final pelo cálculo é do **Contador**.
-- **[NR002]** - O sistema **não** incluirá um módulo de **Gestão de Relacionamento com o Cliente (CRM)**. A comunicação e o gerenciamento de *leads* e vendas permanecem fora do escopo inicial.
-- **[NR003]** - O sistema **não** realizará a **assinatura digital** de arquivos (.XML, .PDF) com certificado A1/A3 diretamente no ambiente web.
-- **[NR004]** - O sistema **não** terá um módulo de **Gestão de Recursos Humanos (RH)** completo (ex: recrutamento, seleção, treinamento). O foco é apenas o **Departamento Pessoal** (Folha, eSocial).
-- **[NR005]** - O sistema **não** terá funcionalidades *offline* na versão inicial (MVP) para o *desktop* do Contador.
-- **[NR006]** - O sistema **não** será responsável pela validação da integridade de dados importados de sistemas legados (Domínio, Alterdata, etc.). A responsabilidade pela qualidade dos dados migrados é do **Escritório de Contabilidade**.
-- **[NR007]** - O sistema **não** incluirá um módulo de **Gestão de Processos e Auditoria Interna (Workflow)** avançado para aprovação de documentos e tarefas entre funcionários.
+- **[NR002]** - O sistema **não** realizará a **assinatura digital** de arquivos (.XML, .PDF) com certificado A1/A3 diretamente no ambiente web.
+- **[NR003]** - O sistema **não** terá funcionalidades *offline* para o *desktop* do Contador.
+- **[NR004]** - O sistema **não** será responsável pela validação da integridade de dados importados de sistemas legados (Domínio, Alterdata, etc.). A responsabilidade pela qualidade dos dados migrados é do **Escritório de Contabilidade**.
+
 
 ---
 
