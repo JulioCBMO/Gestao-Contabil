@@ -193,7 +193,33 @@ criado por Júlio César no Inkscape
 
 ## Custo e venda
 
+## Custo e venda
+
 A decisão acerca da viabilidade econômica e o orçamento do projeto são de responsabilidade do departamento comercial, do gerente de projetos e dos *stakeholders* principais. A análise de custo e venda é dividida em custo de produção (investimento) e modelo de comercialização (receita).
+
+### Investimento Inicial (Custo de Produção - MVP 12 Meses)
+
+O custo principal do projeto reside na folha de pagamento da equipe especializada. O investimento total para a construção de um Produto Mínimo Viável (MVP) robusto do ContabSys, que engloba as 50+ funcionalidades de alto nível, é estimado em **R$ 1.420.000,00 a R$ 2.450.000,00** (incluindo pessoal, infraestrutura, licenças e contingência).
+
+O detalhamento da folha de pagamento da equipe de 5.5 pessoas para 12 meses é:
+
+| Cargo | Quantidade | Salário Mensal Médio (BRL) | Custo Anual Total (BRL) |
+| :---: | :---: | :---: | :---: |
+| **Product Owner (PO) / Analista de Negócios** | 1 | R$ 10.000 | R$ 216.000 |
+| **Gerente de Projeto (PM) / Scrum Master** | 1 | R$ 9.000 | R$ 194.400 |
+| **Desenvolvedor(a) Back-end Sênior** | 2 | R$ 12.000 | R$ 518.400 |
+| **Desenvolvedor(a) Front-end Pleno** | 1 | R$ 7.000 | R$ 151.200 |
+| **DBA / DevOps (Compartilhado 50%)** | 0.5 | R$ 11.000 | R$ 118.800 |
+| **Total Mínimo do Custo Anual com Folha** | **5.5 Pessoas** | | **R$ 1.198.800** |
+
+### Modelo de Comercialização (Venda)
+
+O ContabSys será comercializado no modelo **SaaS (Software como Serviço)**, com estrutura de precificação escalável, visando a obtenção de receita recorrente para cobrir o investimento e gerar lucro.
+
+- **Modelo SaaS Principal**: Assinatura mensal ou anual baseada no **volume de empresas (CNPJs)** gerenciadas pelo escritório cliente, e não apenas por usuário. Isso garante que o preço seja proporcional ao valor entregue.
+- **Licenciamento por Módulos**: Comercialização de módulos específicos de forma avulsa (ex: Módulo Trabalhista, Módulo Fiscal), permitindo que escritórios migrem gradualmente para o sistema completo.
+- **Serviços Agregados**: Cobrança por serviços opcionais de alto valor, como customização de relatórios gerenciais avançados ou consultoria de implementação.
+
 
 ### Investimento Inicial (Custo de Produção - MVP 12 Meses)
 
