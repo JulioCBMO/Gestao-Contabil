@@ -118,8 +118,7 @@ Segue abaixo a lista de stakeholders.
 | -------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------- | --------------------------------------------------------------- |
 | Escritórios de Contabilidade           | Empresas que contratam o sistema para gerenciar suas operações contábeis, fiscais e trabalhistas.                                                       | Cliente e usuário principal do sistema                          |
 | Equipe de Desenvolvimento              | Profissionais responsáveis por desenvolver e manter o sistema.                                                                                          | Desenvolvedores                                                 |
-| Gerente de Projeto                     | Profissional responsável por gerenciar o projeto e garantir que o sistema seja entregue dentro do prazo e orçamento definidos.                          | Gerente de Projeto                                              |
-| Órgãos Governamentais                  | Receita Federal, eSocial, SPED e outros órgãos fiscalizadores que recebem informações do sistema.                                                       | Receptores de obrigações acessórias                             |
+| Gerente de Projeto                     | Profissional responsável por gerenciar o projeto e garantir que o sistema seja entregue dentro do prazo e orçamento definidos.                          | Gerente de Projeto                                              |                            
 | Clientes dos Escritórios               | Empresas e pessoas físicas que utilizam os serviços contábeis e acessam o portal para enviar documentos e acompanhar obrigações.                        | Usuários externos do sistema                                    |
 
 
