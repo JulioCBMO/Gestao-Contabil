@@ -191,35 +191,39 @@ criado por Júlio César no Inkscape
 
 ## Custo e venda
 
-A decisão acerca da viabilidade econômica deste produto será definida pelo departamento comercial, gerente de projetos e potenciais clientes (escritórios de contabilidade). O modelo de comercialização poderá ser:
+## Custo e venda
 
-- **Licenciamento perpétuo**: Venda de licenças com valor único e manutenção anual.
-- **Modelo SaaS**: Assinatura mensal ou anual por usuário ou por empresa gerenciada.
-- **Modelo híbrido**: Combinação de valor inicial de implantação com mensalidade de uso.
+A decisão acerca da viabilidade econômica e o orçamento do projeto são de responsabilidade do departamento comercial, do gerente de projetos e dos *stakeholders* principais. A análise de custo e venda é dividida em custo de produção (investimento) e modelo de comercialização (receita).
 
-O sistema poderá também ser comercializado como produto white label, permitindo que escritórios de contabilidade o revendam para outros escritórios.
+### Investimento Inicial (Custo de Produção - MVP 12 Meses)
+
+O custo principal do projeto reside na folha de pagamento da equipe especializada. O investimento total para a construção de um Produto Mínimo Viável (MVP) robusto do ContabSys, que engloba as 50+ funcionalidades de alto nível, é estimado em **R$ 1.420.000,00 a R$ 2.450.000,00** (incluindo pessoal, infraestrutura, licenças e contingência).
+
+O detalhamento da folha de pagamento da equipe de 5.5 pessoas para 12 meses é:
+
+| Cargo | Quantidade | Salário Mensal Médio (BRL) | Custo Anual Total (BRL) |
+| :---: | :---: | :---: | :---: |
+| **Product Owner (PO) / Analista de Negócios** | 1 | R$ 10.000 | R$ 216.000 |
+| **Gerente de Projeto (PM) / Scrum Master** | 1 | R$ 9.000 | R$ 194.400 |
+| **Desenvolvedor(a) Back-end Sênior** | 2 | R$ 12.000 | R$ 518.400 |
+| **Desenvolvedor(a) Front-end Pleno** | 1 | R$ 7.000 | R$ 151.200 |
+| **DBA / DevOps (Compartilhado 50%)** | 0.5 | R$ 11.000 | R$ 118.800 |
+| **Total Mínimo do Custo Anual com Folha** | **5.5 Pessoas** | | **R$ 1.198.800** |
+
+### Modelo de Comercialização (Venda)
+
+O ContabSys será comercializado no modelo **SaaS (Software como Serviço)**, com estrutura de precificação escalável, visando a obtenção de receita recorrente para cobrir o investimento e gerar lucro.
+
+- **Modelo SaaS Principal**: Assinatura mensal ou anual baseada no **volume de empresas (CNPJs)** gerenciadas pelo escritório cliente, e não apenas por usuário. Isso garante que o preço seja proporcional ao valor entregue.
+- **Licenciamento por Módulos**: Comercialização de módulos específicos de forma avulsa (ex: Módulo Trabalhista, Módulo Fiscal), permitindo que escritórios migrem gradualmente para o sistema completo.
+- **Serviços Agregados**: Cobrança por serviços opcionais de alto valor, como customização de relatórios gerenciais avançados ou consultoria de implementação.
+
 
 ## Licenciamento e instalação
 
-O ContabSys poderá ser licenciado através de diferentes modalidades:
+O ContabSys poderá ser licenciado através de:
 
-1. **Licença SaaS (Software como Serviço)**: O cliente acessa o sistema hospedado em nuvem, sem necessidade de instalação local. A empresa desenvolvedora é responsável pela infraestrutura, manutenção e atualizações.
-
-2. **Licença On-Premise**: O cliente instala o software em seus próprios servidores, tendo controle total sobre a infraestrutura. Requer infraestrutura de TI adequada e equipe técnica para manutenção.
-
-3. **Licença Híbrida**: Combinação de módulos em nuvem com instalação local de componentes específicos, conforme necessidade do cliente.
-
-A instalação do software poderá ser realizada de forma autônoma pelo cliente (no modelo SaaS, apenas cadastro e configuração inicial) ou pela equipe técnica da empresa desenvolvedora, mediante contratação de serviço de implantação.
-
-O processo de implantação incluirá:
-- Configuração inicial do sistema
-- Migração de dados de sistemas anteriores
-- Cadastro de empresas e usuários
-- Configuração de integrações bancárias e governamentais
-- Treinamento da equipe
-- Suporte técnico durante o período de adaptação
-
-Após a instalação, cada usuário receberá credenciais de acesso (login e senha) de acordo com seu perfil, podendo utilizar todas as funcionalidades autorizadas.
+**Licença SaaS (Software como Serviço)**: O cliente acessa o sistema hospedado em nuvem, sem necessidade de instalação local. A empresa desenvolvedora é responsável pela infraestrutura, manutenção e atualizações.
 
 ## Características e funcionalidades de alto nível
 
