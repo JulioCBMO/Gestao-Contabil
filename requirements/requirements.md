@@ -27,7 +27,6 @@
 - [Introdução](#introdução)
   - [Definições, Acrônimos e Abreviações](#definições-acrônimos-e-abreviações)
 - [Usuários identificados](#usuários-identificados)
-- [Não-Requisitos (NRs)](#não-requisitos-nrs)
 - [Requisitos funcionais](#requisitos-funcionais)
   - [Módulo de Gestão de Empresas e Usuários (Setup)](#módulo-de-gestão-de-empresas-e-usuários-setup)
   - [Módulo Contábil e Financeiro](#módulo-contábil-e-financeiro)
@@ -70,7 +69,7 @@ Esta subseção fornece as definições de todos os termos, acrônimos e abrevia
 
   - RF – Requisito Funcional
   - RNF – Requisito Não-Funcional
-  - NR – Não-Requisito
+ 
 
   O identificador do requisito será uma sequência numérica. Esse número sequencial será único para todo o conjunto de tipos de requisitos.
 
@@ -86,12 +85,9 @@ Esta subseção fornece as definições de todos os termos, acrônimos e abrevia
 
 | Termo/Acrônimo | Definição |
 | :---: | --- |
-| **ContabSys** | **Sistema Integrado de Gestão Contábil (SIGC)**. O produto de *software* que será desenvolvido. |
 | eSocial | Sistema de Escrituração Digital das Obrigações Fiscais, Previdenciárias e Trabalhistas |
 | SPED | Sistema Público de Escrituração Digital |
 | NF-e | Nota Fiscal Eletrônica |
-| LGPD | Lei Geral de Proteção de Dados |
-| CNPJ | Cadastro Nacional da Pessoa Jurídica |
 | API | Application Programming Interface (Interface de Programação de Aplicações) |
 | SSL/TLS | Secure Sockets Layer / Transport Layer Security |
 | MVP | Minimum Viable Product (Produto Mínimo Viável) |
@@ -117,19 +113,7 @@ Os seguintes usuários foram identificados para o sistema:
     - Suporte técnico
     - Gerente de projetos
 
----
 
-## Não-Requisitos (NRs)
-
-Os Não-Requisitos (NRs) definem o que o sistema **ContabSys** não deve contemplar em sua versão inicial (MVP), servindo para delimitar o escopo e gerenciar as expectativas.
-
-- **[NR001]** - O sistema **não** fornecerá consultoria tributária ou legal automatizada; apenas os cálculos e a geração de documentos com base nos dados imputados pelo usuário. A responsabilidade final pelo cálculo é do **Contador**.
-- **[NR002]** - O sistema **não** incluirá um módulo de **Gestão de Relacionamento com o Cliente (CRM)**. A comunicação e o gerenciamento de *leads* e vendas permanecem fora do escopo inicial.
-- **[NR003]** - O sistema **não** realizará a **assinatura digital** de arquivos (.XML, .PDF) com certificado A1/A3 diretamente no ambiente web.
-- **[NR004]** - O sistema **não** terá um módulo de **Gestão de Recursos Humanos (RH)** completo (ex: recrutamento, seleção, treinamento). O foco é apenas o **Departamento Pessoal** (Folha, eSocial).
-- **[NR005]** - O sistema **não** terá funcionalidades *offline* na versão inicial (MVP) para o *desktop* do Contador.
-- **[NR006]** - O sistema **não** será responsável pela validação da integridade de dados importados de sistemas legados (Domínio, Alterdata, etc.). A responsabilidade pela qualidade dos dados migrados é do **Escritório de Contabilidade**.
-- **[NR007]** - O sistema **não** incluirá um módulo de **Gestão de Processos e Auditoria Interna (Workflow)** avançado para aprovação de documentos e tarefas entre funcionários.
 
 ---
 
