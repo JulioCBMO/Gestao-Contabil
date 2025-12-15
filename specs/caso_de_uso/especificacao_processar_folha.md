@@ -336,7 +336,7 @@ TOTAL ENCARGOS:            R$ 1.352,67
 
 ---
 
-## 14. Validações Críticas
+## 13. Validações Críticas
 
 ### Antes do Processamento:
 - ✓ Empresa ativa no sistema
@@ -360,7 +360,7 @@ TOTAL ENCARGOS:            R$ 1.352,67
 
 ---
 
-## 16. Rastreabilidade
+## 14. Rastreabilidade
 
 ### Requisitos Funcionais Relacionados:
 - **RF019:** Cadastrar funcionários
