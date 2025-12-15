@@ -59,9 +59,9 @@ Este caso de uso permite que o auxiliar contábil processe a folha de pagamento 
    - Tipo de folha: Mensal, Férias, 13º Salário, Rescisão
 4. O sistema exibe a lista de funcionários ativos da empresa
 5. O sistema apresenta o status de cada funcionário:
-   - ✓ Pronto para processar (todos os dados completos)
-   - ⚠ Pendente (faltam informações ou eventos)
-   - ❌ Bloqueado (erros cadastrais)
+   - Pronto para processar (todos os dados completos)
+   - Pendente (faltam informações ou eventos)
+   - Bloqueado (erros cadastrais)
 6. O usuário clica em "Calcular Folha"
 7. O sistema exibe diálogo de confirmação: "Deseja processar a folha de [Empresa] referente a [Mês/Ano]?"
 8. O usuário confirma
@@ -336,53 +336,6 @@ TOTAL ENCARGOS:            R$ 1.352,67
 
 ---
 
-## 13. Informações Adicionais
-
-### Dados Armazenados:
-
-**Tabela: folha_pagamento**
-- id_folha (PK)
-- id_empresa (FK)
-- competencia (YYYY-MM)
-- tipo_folha (mensal, férias, 13º, rescisão)
-- status (em processamento, processada, paga, cancelada)
-- total_proventos
-- total_descontos
-- total_liquido
-- total_encargos
-- total_fgts
-- total_inss
-- data_processamento
-- usuario_processamento
-- data_fechamento
-
-**Tabela: folha_pagamento_itens**
-- id_item (PK)
-- id_folha (FK)
-- id_funcionario (FK)
-- salario_base
-- dias_trabalhados
-- proventos (JSON: {tipo, valor})
-- descontos (JSON: {tipo, valor})
-- total_proventos
-- total_descontos
-- liquido_receber
-- inss_valor
-- irrf_valor
-- fgts_valor
-- encargos_patronais
-- contracheque_pdf_url
-
-**Tabela: tabelas_trabalhistas**
-- id_tabela (PK)
-- tipo (inss, irrf)
-- competencia
-- faixas (JSON)
-- vigencia_inicio
-- vigencia_fim
-
----
-
 ## 14. Validações Críticas
 
 ### Antes do Processamento:
@@ -407,36 +360,6 @@ TOTAL ENCARGOS:            R$ 1.352,67
 
 ---
 
-## 15. Protótipo de Interface
-
-```
-┌──────────────────────────────────────────────────────────────┐
-│ ContabSys - Processar Folha de Pagamento    [Usuario] [Sair] │
-├──────────────────────────────────────────────────────────────┤
-│ Empresa: [ABC Comércio Ltda ▼]  Competência: [11/2025]      │
-│ Tipo: [● Mensal  ○ Férias  ○ 13º Salário  ○ Rescisão]      │
-├──────────────────────────────────────────────────────────────┤
-│                                                              │
-│ Funcionários: 45 ativos                                      │
-│ ✓ Prontos: 43    ⚠ Pendentes: 2    ❌ Bloqueados: 0        │
-│                                                              │
-│ ┌────────────────────────────────────────────────────────┐  │
-│ │ Nome              Cargo        Salário    Status        │  │
-│ ├────────────────────────────────────────────────────────┤  │
-│ │ ✓ João Silva      Vendedor     3.500,00  Pronto        │  │
-│ │ ✓ Maria Santos    Gerente      5.800,00  Pronto        │  │
-│ │ ⚠ Pedro Costa     Auxiliar     2.200,00  Pendente      │  │
-│ │   └─ Faltam dados bancários                            │  │
-│ │ ✓ Ana Oliveira    Caixa        2.800,00  Pronto        │  │
-│ │ ...                                                      │  │
-│ └────────────────────────────────────────────────────────┘  │
-│                                                              │
-│ [Ver Pendências] [Exportar Prévia] [Calcular Folha]──────── │
-└──────────────────────────────────────────────────────────────┘
-```
-
----
-
 ## 16. Rastreabilidade
 
 ### Requisitos Funcionais Relacionados:
@@ -452,13 +375,5 @@ TOTAL ENCARGOS:            R$ 1.352,67
 - **RNF039:** Processar 1000 funcionários em até 10 minutos
 - **RNF068:** Garantir confiabilidade nos cálculos
 - **RNF070:** Taxa de erros inferior a 0,1%
-
----
-
-## 17. Histórico de Revisões
-
-| Data | Versão | Descrição | Autor |
-|------|--------|-----------|-------|
-| 09/11/2025 | 1.0 | Criação do documento | Felipe, Julio |
 
 ---
