@@ -1,4 +1,4 @@
-*Gerenciar Empresas
+**Gerenciar Empresas
 
 Pré-condição: O usuário está autenticado no sistema.
 
