@@ -6,7 +6,7 @@ Este documento descreve a estrutura interna e o comportamento lógico do sistema
 
 O diagrama de classes representa a espinha dorsal do sistema, definindo como os dados são estruturados e quais operações cada entidade pode realizar.
 
-![Diagrama de Classes Geral](../../img/analise_logica.png)
+![Diagrama de Classes Geral](../../img/analise_logica_.png)
 
 ### 1.1. Definição das Classes Principais
 
