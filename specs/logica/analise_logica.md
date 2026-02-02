@@ -6,15 +6,19 @@ Este documento descreve a estrutura interna e o comportamento lógico do sistema
 
 O diagrama de classes representa a espinha dorsal do sistema, definindo como os dados são estruturados e quais operações cada entidade pode realizar.
 
+![Diagrama de Classes Geral](../../img/analise_logica.png)
+
 ### 1.1. Definição das Classes Principais
 
 | Classe | Atributos (Privados) | Métodos (Públicos) |
 | :--- | :--- | :--- |
-| **Empresa** | `id: int`, `cnpj: str`, `razaoSocial: str`, `regimeTributario: enum`, `status: str` | `cadastrar()`, `alterar()`, `validarCNPJ()`, `listar()` |
-| **Funcionario** | `id: int`, `nome: str`, `cpf: str`, `salarioBase: float`, `dataAdmissao: date` | `cadastrar()`, `editar()`, `obterDadosContracheque()` |
+| **Empresa** | `id: int`, `cnpj: str`, `razaoSocial: str`, `regimeTributario: str` | `cadastrar()`, `alterar()`, `validarCNPJ()`, `listar()` |
+| **Funcionario** | `id: int`, `nome: str`, `cpf: str`, `salarioBase: float` | `cadastrar()`, `editar()`, `obterDadosContracheque()` |
 | **FolhaPagamento** | `id: int`, `mesRef: int`, `anoRef: int`, `totalProventos: float`, `totalDescontos: float` | `processarFolha()`, `gerarPDF()`, `cancelarProcessamento()` |
-| **Usuario** | `id: int`, `nome: str`, `email: str`, `senha: str`, `perfil: str` | `realizarLogin()`, `recuperarSenha()`, `validarSessao()` |
+| **Usuario** | `id: int`, `email: str`, `senha: str` | `realizarLogin()`, `recuperarSenha()`, `validarSessao()` |
 | **Documento** | `id: int`, `nomeArquivo: str`, `tipo: str`, `dataUpload: date` | `anexar()`, `excluir()`, `vincularEmpresa()` |
+
+*Nota: A tipagem segue o padrão Python conforme definido na modelagem técnica.*
 
 ### 1.2. Relacionamentos
 * **Empresa (1) --- (1..*) Funcionario**: Uma empresa possui um ou mais funcionários (Composição).
@@ -28,7 +32,7 @@ O diagrama de classes representa a espinha dorsal do sistema, definindo como os 
 
 Os diagramas abaixo descrevem o fluxo lógico de operações críticas dentro do sistema.
 
-### 2.1. Algoritmo de Processamento de Folha de Pagamento (`UC-020`)
+### 2.1. Algoritmo de Processamento de Folha de Pagamento
 Este fluxo detalha a lógica interna do método `processarFolha()`:
 
 1. **Início**: Selecionar Empresa e Mês/Ano de competência.
@@ -59,4 +63,4 @@ Detalha a inteligência para o cálculo automático de impostos:
 ## 3. Conformidade e Qualidade
 * **LGPD**: Dados sensíveis como CPF e Salários são protegidos por níveis de acesso.
 * **Precisão**: Todos os cálculos seguem as tabelas oficiais do Governo Federal (eSocial/SPED).
-* **Desempenho**: Processamento otimizado para lidar com grandes volumes de funcionários e lançamentos.
+* **Confiabilidade**: Taxa de erros inferior a 0,1% nas operações críticas.
