@@ -1,55 +1,68 @@
-# Visão Lógica - Sistema ContabSys
+# Visão Lógica - ContabSys
 
-Este documento descreve a estrutura interna e o comportamento lógico do sistema **ContabSys**, detalhando as classes, seus atributos, métodos e os algoritmos fundamentais para o funcionamento das rotinas contábeis, fiscais e trabalhistas.
-
-## 1. Diagramas de Classes (Estrutura Estática)
-
-O diagrama de classes representa a espinha dorsal do sistema, definindo como os dados são estruturados e as permissões de cada perfil.
-
-### 1.1. Especialização de Usuários e Gestão de Empresas
-Este diagrama foca na hierarquia de usuários (Administrador, Contador e Cliente) e como cada um interage com a entidade Empresa, garantindo o isolamento de dados conforme a LGPD.
-
-![Especialização de Usuários](../../img/analise_logica2.png)
-
-### 1.2. Estrutura de RH e Folha de Pagamento
-Este diagrama detalha a relação entre funcionários e o processamento de suas respectivas folhas de pagamento.
-
-![Estrutura de RH](../../img/analise_logica1.png)
+Esta seção detalha a estrutura interna do sistema **ContabSys**, apresentando a organização das classes e o comportamento dos algoritmos que sustentam as operações contábeis, fiscais e de RH.
 
 ---
 
-## 2. Definição das Classes Principais
+## 1. Diagrama de Classes Consolidado
 
-| Classe | Atributos (Privados) | Métodos (Públicos) |
+
+### Descrição das Entidades Principais
+* **Empresa:** Core do sistema, centraliza os lançamentos, funcionários e obrigações fiscais.
+* **Usuários (Herança):** Estrutura que diferencia permissões entre Administrador, Contador e Cliente.
+* **LançamentoContabil:** Base para a geração de relatórios como DRE e Balanço.
+* **FolhaPagamento:** Entidade responsável pelo cálculo de proventos e descontos.
+
+---
+
+## 2. Algoritmos e Fluxos de Atividades
+
+Os diagramas de atividades abaixo detalham a inteligência de processamento de cada módulo, garantindo a conformidade com as regras de negócio.
+
+### 2.1 Módulo de Administração e Segurança
+Focado na gestão de acesso e integridade do sistema (**RF001, RF003, RF056**).
+
+* **Gerenciar Usuários:** Fluxo de criação com distinção de perfil (Contador vs Cliente).
+    ![Gerenciar Usuários](administrador_cria_usuario.png)
+* **Exclusão de Usuário:** Processo seguro com verificação de dependências.
+    ![Excluir Usuário](exclusao_do_usuario.png)
+* **Autenticação:** Validação de credenciais e controle de sessão.
+    ![Login](Usuario_realizarLogin.svg)
+
+### 2.2 Módulo Contábil e Fiscal
+Lógica para processamento de impostos e escrituração (**RF005, RF019, RF020**).
+
+* **Registrar Lançamento:** Fluxo de classificação no Plano de Contas.
+    ![Registrar Lançamento](registrar_lancamento.png)
+* **Apurar Tributos:** Algoritmo de cálculo baseado no regime tributário (Simples, Presumido ou Real).
+    ![Apurar Tributos](apurar_tributos.png)
+* **Validação de Dados:** Inteligência para garantir integridade de documentos.
+    ![Validar CNPJ](Empresa_validarCNPJ.svg)
+
+### 2.3 Módulo Trabalhista (RH)
+Processamento de folha e gestão de colaboradores (**RF039, RF046**).
+
+* **Processar Folha de Pagamento:** Cálculo automático de INSS, IRRF e FGTS.
+    ![Processar Folha](FolhaPagamento_processarFolha.svg)
+* **Gestão de Funcionários:** Manutenção de registros e obtenção de contracheques.
+    ![Dados Contracheque](Funcionario_obterDadosContracheque.svg)
+
+### 2.4 Portal do Cliente
+Interação do cliente com o escritório contábil (**RF051, RF053**).
+
+* **Enviar Documentos:** Fluxo de upload e notificação ao contador.
+    ![Enviar Documento](cliente_enviar_documento.png)
+* **Visualizar Dashboards:** Renderização de indicadores financeiros e fiscais.
+    ![Visualizar Dashboard](cliente_visualiza_dashboard.png)
+
+---
+
+## 3. Matriz de Rastreabilidade Lógica
+
+| Algoritmo | Requisito Relacionado | Classe Responsável |
 | :--- | :--- | :--- |
-| **Usuario** (Base) | `id: int`, `email: String`, `senha: String`, `perfil: Enum` | `create()`, `read()`, `update()`, `delete()` |
-| **Administrador** | `setor: String` | `gerenciarUsuarios()`, `restaurarBackup()` |
-| **Contador** | `registroCRC: String` | `apurarTributos()`, `encerrarExercicio()` |
-| **Cliente** | `empresaVinculada: Empresa` | `enviarDocumentos()`, `visualizarDashboards()` |
-| **Empresa** | `cnpj: String`, `razaoSocial: String`, `regimeTributario: String` | `create()`, `validarCNPJ()`, `listar()` |
-| **Funcionario** | `nome: String`, `cpf: String`, `salarioBase: Double` | `obterDadosContracheque()`, `create()` |
-| **FolhaPagamento** | `mesRef: int`, `anoRef: int`, `totalProventos: Double` | `processarFolha()`, `gerarPDF()` |
-
-*Nota: A tipagem foi atualizada para o padrão Java/C#, condizente com o desenvolvimento de sistemas corporativos.*
-
----
-
-## 3. Relacionamentos e Permissões (RF003)
-* **Herança**: Administrador, Contador e Cliente herdam de Usuario.
-* **Gestão Global**: O Administrador gerencia todas as empresas do sistema.
-* **Responsabilidade Técnica**: O Contador é associado às empresas que ele apura.
-* **Composição (Cliente -> Empresa)**: O Cliente possui um vínculo estrito 1:1 com sua empresa, garantindo que ele não acesse dados de terceiros.
-
----
-
-## 4. Diagramas de Atividades (Comportamento Dinâmico)
-
-### 4.1. Algoritmo de Processamento de Folha de Pagamento
-1. **Busca**: Localizar todos os funcionários com status "Ativo".
-2. **Loop de Cálculo**: Para cada funcionário, calcular Proventos, INSS, IRRF e FGTS.
-3. **Saída**: Gerar contracheques em PDF e notificar o contador.
-
-### 4.2. Algoritmo de Apuração Fiscal
-1. **Identificação**: Verificar se o regime é Simples Nacional, Lucro Presumido ou Real.
-2. **Cálculo**: Aplicar as alíquotas correspondentes sobre a Receita Bruta.
-3. **Geração**: Emitir guias de pagamento (DAS/DARF).
+| Apurar Tributos | RF019 / RF020 | Contador |
+| Processar Folha | RF039 / RF046 | FolhaPagamento |
+| Registrar Lançamento | RF005 | LancamentoContabil |
+| Validar CNPJ | RF001 | Empresa |
+| Gerenciar Acessos | RF003 | Administrador |
